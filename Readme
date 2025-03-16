@@ -1,0 +1,40 @@
+# GitHub Repository Creator
+
+Your GitHub Personal Access Token (PAT) must have repo permissions.
+If your repo is private, ensure repo scope is enabled when generating the token
+
+This script automates the creation of multiple GitHub repositories using the GitHub API.
+
+## 🚀 Installation
+
+1. **Install dependencies:**  
+   ```sh
+   pip install requests
+   ```
+   OR  
+   ```sh
+   pip3 install requests
+   ```
+
+2. **Edit the `repos.txt` file:**  
+   - Add repository names and descriptions in the following format:  
+     ```
+     client-project1,First project for the client
+     client-project2,Second project for the client
+     client-project3,Third project for the client
+     ```
+     
+3. **Run the script:**  
+   ```sh
+   python3 app.py
+   ```
+   OR  
+   ```sh
+   python app.py
+   ```
+
+## 📌 Features
+- Automatically creates multiple repositories for a client.
+- Reads repository names and descriptions from a file (`repos.txt`).
+- Uses GitHub API for repository creation.
+
